@@ -23,7 +23,7 @@ controls.update();
 // hemi light
 const upColor = 0xFFFF80;
 const downColor = 0x4040FF;
-light = new THREE.HemisphereLight(upColor, downColor, 1.0)
+const light = new THREE.HemisphereLight(upColor, downColor, 1.0)
 scene.add(light);
 
 // load model
