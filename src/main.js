@@ -20,10 +20,10 @@ controls.update();
 // const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
 // scene.add(ambientLight)
 
-// hemi light
-const upColor = 0xFFFF80;
-const downColor = 0x4040FF;
-const light = new THREE.HemisphereLight(upColor, downColor, 1.0)
+// directional light
+let light = new THREE.DirectionalLight(0xFFFFFF, 1.0)
+light.position.set(2, 10, 1)
+light.target.position.set(0, 30, 0)
 scene.add(light);
 
 // load model
