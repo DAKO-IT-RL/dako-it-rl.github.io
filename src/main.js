@@ -17,8 +17,14 @@ camera.lookAt(0, 30, 0)
 controls.update();
 
 // set up ambient light
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
-scene.add(ambientLight)
+// const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+// scene.add(ambientLight)
+
+// hemi light
+const upColor = 0xFFFF80;
+const downColor = 0x4040FF;
+light = new THREE.HemisphereLight(upColor, downColor, 1.0)
+scene.add(light);
 
 // load model
 loader.load( './assets/free_tesla_tequila.glb', function ( gltf ) {
