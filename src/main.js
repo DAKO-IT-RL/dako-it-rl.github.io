@@ -21,7 +21,7 @@ controls.update();
 // scene.add(ambientLight)
 
 // directional light
-let light = new THREE.DirectionalLight(0xFFFFFF, 1.0)
+let light = new THREE.DirectionalLight(0xFFFFFF, 2.0)
 light.position.set(2, 10, 1)
 light.target.position.set(0, 30, 0)
 scene.add(light);
